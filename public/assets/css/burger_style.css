@@ -1,0 +1,47 @@
+body {
+	font-family: "Baloo", "Montserrat", sans-serif;
+	font-size: 14px;
+	background: url(../img/creepyBurger.jpg);
+	background-position: center;
+}
+
+h1 {
+	font-size: 250%;
+	text-align: center;
+}
+
+h2 {
+	font-size: 200%;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+.in {
+	float: left;
+	margin: 10px 100px;
+	padding: 50px;
+}
+
+.out {
+	float: right;
+	margin: 10px 100px;
+	/*background: url(../img/emptyStomach.png);
+	background-repeat: no-repeat;*/
+	padding: 50px;
+}
+
+.add {
+	clear: both;
+	margin: 10px auto;
+	border: solid #000000 2px;
+	width: 500px;
+	padding: 5px;
+}
+
+.burger {
+	font-size: 150%;
+	padding: 5px;
+}

@@ -1,11 +1,13 @@
 <h1>Eat-Da-Burger!</h1>
 
-<h2>Burgers to Devour</h2>
+<div class="in">
+
+<h2>Burgers to Devour:<br><small>Sample These Text Burgers!</small></h2>
 
 <ul>
   {{#each burgers}}
     {{#unless this.devoured}}
-      <li>
+      <li class="burger">
         {{this.burger_name}}
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
@@ -19,12 +21,15 @@
   {{/each}}
 </ul>
 
-<h2>Burger Heaven: a home for devoured burgers</h2>
+</div>
+
+<div class="out">
+<h2>Burger Heaven:<br><small>A Home for Devoured Burgers</small></h2>
 
 <ul>
   {{#each burgers}}
     {{#if this.devoured}}
-      <li>
+      <li class="burger">
         {{this.burger_name}}
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
@@ -36,6 +41,9 @@
     {{/if}}
   {{/each}}
 </ul>
+</div>
+
+<div class="add">
 
 <h2>Add a Burger</h2>
 <form class="create-update-form" action="/" method="POST">
@@ -47,3 +55,4 @@
 
   <button type="submit">Add Burger</button>
 </form>
+</div>
